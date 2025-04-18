@@ -1,6 +1,6 @@
 # AutoScanner - Network Port Scanning & AI Reporting
 
-AutoScanner is an automated network scanning tool written in Bash that performs TCP and UDP port scans on a given IP address, generates detailed Nmap scan reports, and sends the results to the Deepseek AI API to analyze the potential attack vectors and vulnerabilities. It then stores the findings in a report directory.
+AutoScanner is an automated network scanning tool written in Bash that performs TCP and UDP port scans on a given IP address, generates detailed Nmap scan reports, and sends the results to the Deepseek AI API to analyze the potential attack vectors and vulnerabilities. It then stores the findings in a report directory and cleans up temporary files.
 
 ## Features
 
@@ -28,6 +28,14 @@ sudo apt install curl
 ```bash
 git clone https://github.com/jaimemdi/AI_port-scan.git
 cd AI_port-scan
-sudo ./AI_port-scan.sh
 ```
+
+```
+nano AI_port-scan.sh #put in your api key
+```
+
+```bash
+sudo ./AI_port-scan.sh 10.10.10.10 #change the ip address
+```
+
 
